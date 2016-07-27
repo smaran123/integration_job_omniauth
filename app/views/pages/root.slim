@@ -1,0 +1,9 @@
+h3 Hello, Felix!
+
+ul
+  li = link_to 'Gmail', '/auth/google_oauth2'
+  li = link_to 'Facebook', '/auth/facebook'
+  li = link_to 'LinkedIn', '/auth/linkedin'
+
+- if @contacts.present?
+  = @contacts
